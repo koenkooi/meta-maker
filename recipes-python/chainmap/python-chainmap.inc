@@ -4,8 +4,8 @@ This module is a polyfill, implementing ChainMap for reasonably-recent versions 
 LICENSE = "PSF"
 LIC_FILES_CHKSUM = "file://setup.py;beginline=23;endline=23;md5=fa869eb628865ee985e6a9d306744ac8"
 
-SRC_URI[md5sum] = "2ddf536db921c82c9559791047b88caf"
-SRC_URI[sha256sum] = "405da3bce9913bfb33e6e497803b447b60d12ab44031ca357626143e087e0526"
+SRC_URI[md5sum] = "f6e868473d269acbcd87a2fdb4cbe57c"
+SRC_URI[sha256sum] = "e42aaa4b3e2f66102a11bfd563069704bfbfd84fdcb517b564effd736bf53cd9"
 
 PYPI_PACKAGE = "chainmap"
 
