@@ -6,12 +6,13 @@ SECTION = "devel/python"
 LICENSE = "AGPL-3.0"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=73f1eb20517c55bf9493b7dd6e480788"
 
-SRCREV = "c6b4eee437ce2e95f39b61ce859fc8097d17ed47"
+SRCREV = "8409fdaa48ff692bbb050086e8d7c09940b58c59"
 
-PV = "1.4.0rc+git${SRCPV}"
+PE = "1"
+PV = "1.3.12+git${SRCPV}"
 
 PATCHTOOL = "git"
-SRC_URI = "git://github.com/foosel/OctoPrint.git;protocol=https;branch=maintenance \ 
+SRC_URI = "git://github.com/foosel/OctoPrint.git;protocol=https;branch=master \ 
            file://config.yaml \
            file://octoprint.service \
            file://octoprint \
@@ -77,7 +78,9 @@ RDEPENDS_${PN} = "python-awesome-slugify \
                   python-backports-abc \
                   python-backports-ssl \
                   python-blinker \
+                  python-cachelib \
                   python-feedparser \
+                  python-filetype \
                   python-flask10 \
                   python-flask-assets \
                   python-flask-babel \
@@ -99,16 +102,18 @@ RDEPENDS_${PN} = "python-awesome-slugify \
                   python-psutil \
                   python-pylru \
                   python-pyserial \
-                  python-pyyaml313 \
+                  python-pyyaml51 \
                   python-requests \
                   python-rsa \
                   python-sarge \
                   python-semantic-version \
+                  python-sentry-sdk \
                   python-singledispatch \
                   python-sockjs-tornado45 \
                   python-sphinx-rtd-theme \
                   python-sphinxcontrib-httpdomain \
                   python-tornado45 \
+                  python-typing \
                   python-watchdog \
                   python-werkzeug \
                   python-werkzeug-tests \
@@ -117,7 +122,6 @@ RDEPENDS_${PN} = "python-awesome-slugify \
                   python-future \
                   python-scandir \
                   python-websocket-client \
-                  python-dateutil \
                   python-wrapt \
                   python-futures \
                   python-emoji \
