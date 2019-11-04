@@ -6,13 +6,13 @@ SECTION = "devel/python"
 LICENSE = "AGPL-3.0"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=73f1eb20517c55bf9493b7dd6e480788"
 
-SRCREV = "8409fdaa48ff692bbb050086e8d7c09940b58c59"
+SRCREV = "6e6dd2c34e14226a4bdf842caff796e07384305d"
 
 PE = "1"
 PV = "1.3.12+git${SRCPV}"
 
 PATCHTOOL = "git"
-SRC_URI = "git://github.com/foosel/OctoPrint.git;protocol=https;branch=master \ 
+SRC_URI = "git://github.com/foosel/OctoPrint.git;protocol=https;branch=maintenance \ 
            file://config.yaml \
            file://octoprint.service \
            file://octoprint \
