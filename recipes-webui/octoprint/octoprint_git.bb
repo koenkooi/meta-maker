@@ -6,13 +6,16 @@ SECTION = "devel/python"
 LICENSE = "AGPL-3.0"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=73f1eb20517c55bf9493b7dd6e480788"
 
-SRCREV = "32f5f36e5ad8381b15e061f8d109160d0cc19597"
+DEPENDS = "python-markdown-native"
+
+SRCREV = "8173f8d0c42a0e90771f53a5ebb56b9cd67b5b35"
 
 PE = "1"
 PV = "1.3.12+git${SRCPV}"
 
 PATCHTOOL = "git"
 SRC_URI = "git://github.com/foosel/OctoPrint.git;protocol=https;branch=maintenance \ 
+           file://0001-Precompile-markdown-remove-changelog.patch \
            file://config.yaml \
            file://octoprint.service \
            file://octoprint \
