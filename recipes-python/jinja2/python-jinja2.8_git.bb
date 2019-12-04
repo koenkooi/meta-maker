@@ -6,11 +6,11 @@ HOMEPAGE = "http://jinja.pocoo.org/docs/"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=20c831f91dd3bd486020f672ba2be386"
 
-SRC_URI = "git://github.com/mitsuhiko/jinja2.git;protocol=https;branch=2.8-maintenance"
+SRC_URI = "git://github.com/mitsuhiko/jinja2.git;protocol=https;nobranch=true"
 SRCREV = "74bd64e56387f5b2931040dc7235a3509cde1611"
 
 # SRCREV = tag
-PV = "2.8.2.dev0"
+PV = "2.8.2-dev0"
 
 S = "${WORKDIR}/git"
 
