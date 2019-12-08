@@ -3,7 +3,7 @@ SUMMARY = "Nginx helper for octoprint and mjpg-streamer"
 LICENSE = "AGPL-3.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=73f1eb20517c55bf9493b7dd6e480788"
 
-PV = "1.0"
+PV = "1.1"
 
 SRC_URI = "file://nginx.conf \
            file://LICENSE \
