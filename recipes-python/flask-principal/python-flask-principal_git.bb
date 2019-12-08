@@ -21,4 +21,6 @@ export HOST_SYS
 export STAGING_INCDIR
 export STAGING_LIBDIR
 
+RDEPENDS_${PN} += "python-blinker"
+
 BBCLASSEXTEND = "native"
