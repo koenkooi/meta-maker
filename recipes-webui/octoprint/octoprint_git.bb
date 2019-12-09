@@ -129,7 +129,6 @@ RDEPENDS_${PN} = "python-awesome-slugify \
                   python-emoji \
                   python-monotonic \
                   sudo \
-                  curaengine \ 
 "
 
 RRECOMMENDS_${PN} = "ffmpeg \
