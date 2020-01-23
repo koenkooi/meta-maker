@@ -8,14 +8,14 @@ LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=73f1eb20517c55bf9493b7dd6e480788"
 
 DEPENDS = "python-markdown-native"
 
-SRCREV = "8173f8d0c42a0e90771f53a5ebb56b9cd67b5b35"
+SRCREV = "66ef7b66bb5f780793374c162ce6bacb04c0fe94"
 
 PE = "1"
-PV = "1.3.12+git${SRCPV}"
+# Bump PE after RC ends
+PV = "1.4.0rc3+git${SRCPV}"
 
 PATCHTOOL = "git"
-SRC_URI = "git://github.com/foosel/OctoPrint.git;protocol=https;branch=maintenance \ 
-           file://0001-Precompile-markdown-remove-changelog.patch \
+SRC_URI = "git://github.com/foosel/OctoPrint.git;protocol=https;branch=staging/devel \ 
            file://config.yaml \
            file://octoprint.service \
            file://octoprint \
@@ -80,14 +80,14 @@ pkg_postinst_${PN}_append () {
 RDEPENDS_${PN} = "python-awesome-slugify \
                   python-backports-abc \
                   python-backports-ssl \
+                  python-blinker \
                   python-cachelib \
                   python-feedparser \
                   python-filetype \
-                  python-flask10 \
+                  python-flask12 \
                   python-flask-assets \
                   python-flask-babel \
-                  python-flask-login2 \
-                  python-flask-principal \
+                  python-flask-login \
                   python-frozendict \
                   python-html \
                   python-itsdangerous \
