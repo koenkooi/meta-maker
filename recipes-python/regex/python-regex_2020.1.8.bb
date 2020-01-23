@@ -7,12 +7,12 @@ LICENSE = "PSFL"
 LIC_FILES_CHKSUM = "file://setup.py;beginline=32;endline=31;md5=d41d8cd98f00b204e9800998ecf8427e"
 
 SRC_URI = "https://pypi.python.org/packages/source/r/regex/regex-${PV}.tar.gz"
-SRC_URI[md5sum] = "1fc6aaf2ae0b31dc1ca93db1c71a6368"
-SRC_URI[sha256sum] = "c300b05f4ee90a1cb72332c62aea9aadcb4dd030038f0cafad5b047fd7fe6e05"
+SRC_URI[md5sum] = "73abc3d7e902e94b4281fd2652f5a94f"
+SRC_URI[sha256sum] = "d0f424328f9822b0323b3b6f2e4b9c90960b24743d220763c7f07071e0778351"
 
 S = "${WORKDIR}/regex-${PV}"
 
-inherit distutils 
+inherit setuptools
 
 export BUILD_SYS
 export HOST_SYS
