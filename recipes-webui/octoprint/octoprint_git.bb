@@ -8,14 +8,14 @@ LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=73f1eb20517c55bf9493b7dd6e480788"
 
 DEPENDS = "python-markdown-native"
 
-SRCREV = "66ef7b66bb5f780793374c162ce6bacb04c0fe94"
+SRCREV = "7b2762c5904595111b77f6e5dda283663b6e325f"
 
 PE = "1"
 # Bump PE after RC ends
-PV = "1.4.0rc3+git${SRCPV}"
+PV = "1.4.0rc4+git${SRCPV}"
 
 PATCHTOOL = "git"
-SRC_URI = "git://github.com/foosel/OctoPrint.git;protocol=https;branch=staging/devel \ 
+SRC_URI = "git://github.com/foosel/OctoPrint.git;protocol=https;branch=rc/maintenance \ 
            file://config.yaml \
            file://octoprint.service \
            file://octoprint \
